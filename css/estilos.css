@@ -1,0 +1,988 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Vazirmatn', sans-serif;*/
+    /*font-family: 'Antonio', sans-serif;*/
+}
+
+/*------------- HEADER -------------*/ 
+
+.header {
+    background-image: url(.././img/backheaderr.png);
+    background-color: #191818;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 24rem;
+}
+
+.header__logo {
+    margin-left: 2rem;
+    width: 18.75rem;
+    height:18.44rem;
+}
+
+/*------------- NAVBAR -------------*/ 
+
+.header__navbar ul {
+    padding: 1rem;
+    list-style-type: none;
+    text-align: right;
+}
+
+.header__navbar li {
+    display: inline-block;
+}
+
+.header__navbar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    padding: 1.2rem;
+    line-height:1rem;
+    color:beige;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/*------------- CONTENEDOR --------------*/
+
+.contenedor__grid {
+    display: grid;
+    grid-template-areas:
+    "parrafo imagen"
+    ;
+    grid-template-columns: 35.938rem 31.25rem;
+    grid-template-rows: 31.25rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    background-color:#191818;
+}
+
+section#parrafo {
+    grid-area: parrafo;
+}
+
+section#imagen {
+    grid-area: imagen;
+}
+
+/*------------ CONTENIDO ------------*/
+
+.contenido {
+    background-color: #191818;
+    color:beige;
+    padding: 3rem;
+    line-height: 1.6;
+}
+
+.contenido__parrafo--titulo {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.contenido__parrafo--texto {
+    font-size: 1.438rem;
+}
+
+/*----------- CONTENIDO LATERAL ------------*/
+
+.lateral {
+    background-color: #191818;
+    padding: 2rem;
+}
+
+.lateral__imagen {
+    width: 28.125rem;
+    height: 23.75rem;
+}
+
+/*---------------- FOOTER ----------------*/
+
+.footer {
+    background-image: url(.././img/fondofooter.png);
+    background-color: #191818;
+    background-position: center;
+    color:beige;
+    clear: both;
+}
+
+.footer__contenido {
+    display: grid;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.25rem;
+    padding: 1rem;
+    height:25rem;
+}
+
+.footer__contenido a {
+    text-decoration: none;
+    margin-right: 1rem;
+    padding: 1.2rem;
+    color:beige;
+}
+
+.footer__contenido--logo a {
+    font-size: 1.25rem;
+}
+
+.footer__contenido--logo img {
+    width: 12.188rem;
+    height: 5.938rem;
+}
+
+.footer__contenido--redes p {
+    font-size: 1.25rem;
+}
+
+.footer__contenido--iconos img {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+
+/*------------- CONTACTO -------------*/
+
+.comunicate {
+    background-color: #191818;
+    color: beige;
+    display: grid;
+    grid-template-areas:
+    "texto"
+    "formulario"
+    ;
+    align-content: space-evenly;
+    justify-content: center;
+    justify-items: center;
+    height: 62.5rem;
+}
+
+div#texto {
+    grid-area: texto;
+}
+
+div#formulario {
+    grid-area: formulario;
+}
+
+.comunicate__texto {
+    text-align: center;
+}
+
+.comunicate__texto h1 {
+    font-size: 2.688rem;
+    padding: 3.5rem;
+    text-transform: uppercase;
+}
+
+.comunicate__texto p {
+   font-size: 1.563rem;
+}
+
+.comunicate__formulario {
+    font-size: 1.25rem;
+    width: 43.75rem;
+}
+
+/*-------------- HAMBURGUESAS -----------*/
+
+.menu {
+    background-color: #191818;
+    color: beige;
+}
+
+.menu h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3.5rem;
+    font-size: 2.688rem;
+}
+
+.menu img {
+    width: 18.75rem;
+    height: 18.75rem;
+}
+
+.menu__grid {
+    display: grid;
+    grid-template-areas: 
+    "agares belcebu"
+    "paimon astaroth"
+    "amon samael"
+    "lilith lucifer"
+    ;
+    grid-template-columns: 31.25rem 31.25rem;
+    grid-template-rows: 37.5rem 37.5rem 37.5rem 37.5rem;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 187.5rem;
+}
+
+div#agares {
+    grid-area: agares;
+}
+
+div#belcebu {
+    grid-area: belcebu;
+}
+
+div#paimon {
+    grid-area: paimon;
+}
+
+div#astaroth {
+    grid-area: astaroth;
+}
+
+.menu__grid div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.menu__grid p {
+    text-align: center;
+}
+
+.menu__grid h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.563rem;
+}
+
+/*-------------- TRABAJÁ CON NOSOTROS ---------*/
+
+.sumate {
+    background-color: #191818;
+    color: beige;
+    display: grid;
+    grid-template-areas:
+    "texto"
+    "formulario"
+    ;
+    align-content: space-evenly;
+    justify-content: center;
+    justify-items: center;
+    height: 62.5rem;
+}
+
+div#texto {
+    grid-area: texto;
+}
+
+div#formulario {
+    grid-area: formulario;
+}
+
+.sumate__texto {
+    text-align: center;
+}
+
+.sumate__texto h1 {
+    font-size: 2.688rem;
+    padding: 3.5rem;
+    text-transform: uppercase;
+}
+
+.sumate__texto p {
+   font-size: 1.563rem;
+}
+
+.sumate__formulario {
+    font-size: 1.25rem;
+    width: 43.75rem;
+}
+
+/*--------------- UBICACIÓN ------------*/
+
+.ubicacion {
+    padding: 3rem;
+    background-color: #191818;
+    color: beige;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 37.5rem 18.75rem;
+    grid-template-rows: 21.875rem 21.875rem;
+}
+
+.ubicacion__direccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    height: 31.25rem;
+    width: 31.25rem;
+}
+
+.ubicacion__direccion h2 {
+   text-transform: uppercase;
+   font-size: 1.688rem;
+}
+
+.ubicacion__contacto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 6rem;
+    height: 18.75rem;
+} 
+
+.ubicacion__contacto h3 {
+    text-transform: uppercase;
+    font-size: 1.375rem;
+    text-align: center;
+}
+
+.ubicacion__contacto p {
+    text-align: center;
+}
+
+.ubicacion__contacto p#pedido {
+    text-transform: uppercase;
+}
+
+.ubicacion__contacto img {
+    height: 3.125rem;
+    width: 3.125rem;
+}
+
+
+/*------------------ DESKTOP --------------*/
+
+@media (max-width:1024px) {
+
+/*---------------------------------*/   
+.header{
+    height:16rem;
+}
+
+.header__logo {
+    width: 11.875rem;
+    height: 11.563rem;
+    margin-left: 1rem;
+}
+
+.header__navbar a {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+/*----------------------------------*/
+
+.contenedor__grid {
+    justify-content: space-between;
+}
+
+.contenido__parrafo--titulo {
+    font-size: 1.875rem;
+    margin-top: 10%;
+}
+
+.contenido__parrafo--texto {
+    font-size: 1.25rem;
+}
+
+.lateral__imagen {
+    width: 21rem;
+    height: 17.5rem;
+}
+/*----------------------------------*/
+
+.footer__contenido {
+    font-size: 1.063rem;
+
+}
+
+.footer__contenido--logo img {
+    width: 9.690rem;
+    height: 4.40rem;
+}
+
+.footer__contenido--logo a {
+   font-size: 1.063rem;
+}
+
+.footer__contenido--redes p {
+    font-size: 1.063rem ;
+}
+
+.footer__contenido--iconos img {
+    width: 3.125rem;
+    height: 3.135rem;
+}
+
+/*--------------------------------*/
+
+.comunicate {
+    height: 56.25rem;
+}
+
+.comunicate__texto h1 {
+    font-size: 1.875rem;
+    padding: 2rem;
+}
+
+.comunicate__texto p {
+   font-size: 1.063rem;
+}
+
+.comunicate__formulario {
+    font-size: 1.063rem;
+    width: 32rem;
+}
+
+/*-------------------------------*/   
+
+.menu h1 {
+    font-size: 1.875rem;
+    padding: 2.5rem;
+}
+
+.menu img {
+    width: 16rem;
+    height: 16rem;
+}
+
+.menu__grid {
+    grid-template-areas: 
+    "agares" 
+    "belcebu"
+    "paimon" 
+    "astaroth"
+    "amon" 
+    "samael"
+    "lilith" 
+    "lucifer"
+    ;
+    grid-template-columns: 37.5rem;
+    grid-template-rows: 26.25rem 26.25rem 26.25rem 26.25rem 26.25rem 26.25rem 26.25rem 26.25rem;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 233.5rem;
+}
+
+.menu__grid p {
+    font-size: 1.063rem;
+    padding: 2rem;
+}
+
+.menu__grid h2 {
+    font-size: 1.25rem;
+}
+
+/*----------------------------------*/
+
+.sumate {
+height: 44rem;
+}
+
+.sumate__texto h1 {
+font-size: 1.875rem;
+padding: 1rem;
+}
+
+.sumate__texto p {
+font-size: 1.063rem;
+}
+
+.sumate__formulario {
+font-size: 1.063rem;
+width: 32rem;
+}
+
+/*-----------------------------------*/
+
+.ubicacion {
+    grid-template-areas: 
+    "direccion"
+    "contacto"
+    ;
+    grid-template-columns: 33rem;
+    grid-template-rows: 34rem;
+}
+
+section#direccion {
+    grid-area: direccion;
+}
+
+aside#contacto {
+    grid-area: contacto;
+}
+
+.ubicacion__direccion {
+    height: 32.5rem;
+    width: 33.75rem;
+}
+
+.ubicacion__direccion h2 {
+   text-transform: uppercase;
+   font-size: 1.875rem;
+}
+
+.ubicacion__direccion p {
+    font-size: 1.063rem;
+}
+
+.ubicacion__direccion iframe {
+    width: 31.7rem;
+}
+
+.ubicacion__contacto {
+    margin-top: 3rem;
+} 
+
+.ubicacion__contacto h3 {
+    font-size: 1.25rem;
+}    
+
+.ubicacion__contacto img {
+    height: 3.125rem;
+    width: 3.125rem;
+}
+
+.ubicacion__contacto p {
+    font-size: 1.063rem;
+}
+
+}
+
+
+/*------------ TABLET --------------*/
+
+@media (max-width:768px) {
+
+ /*---------------------------------*/   
+ .header{
+    height:15rem;
+}
+
+.header__logo {
+    width: 10.94rem;
+    height: 10.5rem;
+    margin-left: 0.5rem;
+}
+
+.header__navbar a {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+}
+
+/*----------------------------------*/
+
+.contenedor__grid {
+    grid-template-areas:
+    "parrafo"
+    "imagen"
+    ;
+    grid-template-columns: 37.5rem;
+    grid-template-rows: 15.625rem 21.875rem;
+    align-items: stretch;
+}
+
+.contenido {
+    padding: 2.5rem;
+}
+
+.contenido__parrafo--titulo {
+    font-size: 1.625rem;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.contenido__parrafo--texto {
+    font-size: 1.063rem;
+    text-align: center;
+}
+
+.lateral__imagen {
+    width: 20.313rem;
+    height: 17.188rem;
+}
+/*----------------------------------*/
+
+.footer__contenido {
+    font-size: 1.063rem;
+
+}
+
+.footer__contenido--logo img {
+    width: 9.690rem;
+    height: 4.40rem;
+}
+
+.footer__contenido--logo a {
+   font-size: 1.063rem;
+}
+
+.footer__contenido--redes p {
+    font-size: 1.063rem ;
+}
+
+.footer__contenido--iconos img {
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+/*--------------------------------*/
+
+.comunicate {
+    height: 56.25rem;
+}
+
+.comunicate__texto h1 {
+    font-size: 1.625rem;
+    padding: 2rem;
+}
+
+.comunicate__texto p {
+   font-size: 0.938rem;
+}
+
+.comunicate__formulario {
+    font-size: 0.938rem;
+    width: 31.25rem;
+}
+
+/*-------------------------------*/   
+
+.menu h1 {
+    font-size: 1.625rem;
+    padding: 2.5rem;
+}
+
+.menu img {
+    width: 15.625rem;
+    height: 15.625rem;
+}
+
+.menu__grid {
+    grid-template-areas: 
+    "agares" 
+    "belcebu"
+    "paimon" 
+    "astaroth"
+    "amon" 
+    "samael"
+    "lilith" 
+    "lucifer"
+    ;
+    grid-template-columns: 37.5rem;
+    grid-template-rows: 26.25rem 26.25rem 26.25rem 26.25rem 26.25rem 26.25rem 26.25rem 26.25rem;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 231.25rem;
+}
+
+.menu__grid p {
+    font-size: 0.938rem;
+    padding: 2rem;
+}
+
+.menu__grid h2 {
+    font-size: 1.063rem;
+}
+
+/*----------------------------------*/
+
+.sumate {
+height: 43.75rem;
+}
+
+.sumate__texto h1 {
+font-size: 1.625rem;
+padding: 1rem;
+}
+
+.sumate__texto p {
+font-size: 1.063rem;
+}
+
+.sumate__formulario {
+font-size: 0.938rem;
+width: 31.25rem;
+}
+
+/*-----------------------------------*/
+
+.ubicacion {
+    grid-template-areas: 
+    "direccion"
+    "contacto"
+    ;
+    grid-template-columns: 32.5rem;
+    grid-template-rows: 33.75rem;
+}
+
+section#direccion {
+    grid-area: direccion;
+}
+
+aside#contacto {
+    grid-area: contacto;
+}
+
+.ubicacion__direccion {
+    height: 32.5rem;
+    width: 33.75rem;
+}
+
+.ubicacion__direccion h2 {
+   text-transform: uppercase;
+   font-size: 1.625rem;
+}
+
+.ubicacion__direccion p {
+    font-size: 0.938rem;
+}
+
+.ubicacion__direccion iframe {
+    width: 31.25rem;
+}
+
+.ubicacion__contacto {
+    margin-top: 3rem;
+} 
+
+.ubicacion__contacto h3 {
+    font-size: 1.063rem;
+}    
+
+.ubicacion__contacto img {
+    height: 3.125rem;
+    width: 3.125rem;
+}
+
+.ubicacion__contacto p {
+    font-size: 0.938rem;
+}
+
+}
+
+/*--------- MOBILE ----------*/
+
+@media (max-width:480px) {
+
+/*---------------------------------*/   
+       .header{
+           height:15rem;
+       }
+   
+       .header__logo {
+           width: 10.94rem;
+           height: 10.5rem;
+           margin-left: 0.5rem;
+       }
+   
+       .header__navbar a {
+           font-size: 0.7rem;
+           margin-right: 0.5rem;
+           padding: 0.3rem;
+       }
+ /*----------------------------------*/
+   
+       .contenedor__grid {
+           grid-template-areas:
+           "parrafo"
+           "imagen"
+           ;
+           grid-template-columns: 30rem;
+           grid-template-rows: 12.5rem 18.75rem;
+           align-items: stretch;
+       }
+   
+       .contenido {
+           padding: 2.5rem;
+       }
+   
+       .contenido__parrafo--titulo {
+           font-size: 1.375rem;
+           text-align: center;
+           margin-top: 10%;
+       }
+   
+       .contenido__parrafo--texto {
+           font-size: 0.813rem;
+           text-align: center;
+       }
+   
+       .lateral__imagen {
+           width: 15.625rem;
+           height: 12.5rem;
+       }
+/*----------------------------------*/
+   
+       .footer__contenido {
+           font-size: 0.938rem;
+   
+       }
+   
+       .footer__contenido--logo img {
+           width: 7.5rem;
+           height: 3.438rem;
+       }
+   
+       .footer__contenido--logo a {
+          font-size: 0.938rem;
+       }
+       
+       .footer__contenido--redes p {
+           font-size: 0.938rem;
+       }
+       
+       .footer__contenido--iconos img {
+           width: 1.875rem;
+           height: 1.875rem;
+       }
+   
+/*--------------------------------*/
+   
+       .comunicate {
+           height: 50rem;
+       }
+   
+       .comunicate__texto h1 {
+           font-size: 1.375rem;
+           padding: 2rem;
+       }
+       
+       .comunicate__texto p {
+          font-size: 0.938rem;
+       }
+       
+       .comunicate__formulario {
+           font-size: 0.938rem;
+           width: 25rem;
+       }
+   
+    /*-------------------------------*/   
+   
+       .menu h1 {
+           font-size: 1.375rem;
+           padding: 2.5rem;
+       }
+   
+       .menu img {
+           width: 11.25rem;
+           height: 11.25rem;
+       }
+   
+       .menu__grid {
+           grid-template-areas: 
+           "agares" 
+           "belcebu"
+           "paimon" 
+           "astaroth"
+           "amon" 
+           "samael"
+           "lilith" 
+           "lucifer"
+           ;
+           grid-template-columns: 30rem;
+           grid-template-rows: 21.875rem 21.875rem 21.875rem 21.875rem 21.875rem 21.875rem 21.875rem 21.875rem;
+           justify-content: space-evenly;
+           align-content: space-evenly;
+           height: 206.25rem;
+       }
+   
+       .menu__grid p {
+           font-size: 0.75rem;
+           padding: 2rem;
+       }
+   
+       .menu__grid h2 {
+           font-size: 0.938rem;
+       }
+   
+    /*----------------------------------*/
+    
+    .sumate {
+       height: 40.625rem;
+   }
+   
+   .sumate__texto h1 {
+       font-size: 1.375rem;
+       padding: 1rem;
+   }
+   
+   .sumate__texto p {
+      font-size: 0.75rem;
+   }
+   
+   .sumate__formulario {
+       font-size: 0.75rem;
+       width: 25rem;
+   }
+   
+    /*-----------------------------------*/
+   
+       .ubicacion {
+           grid-template-areas: 
+           "direccion"
+           "contacto"
+           ;
+           grid-template-columns: 30rem;
+           grid-template-rows: 31.25rem;
+       }
+   
+       section#direccion {
+           grid-area: direccion;
+       }
+   
+       aside#contacto {
+           grid-area: contacto;
+       }
+   
+       .ubicacion__direccion {
+           height: 31.25rem;
+           width: 30rem;
+       }
+       
+       .ubicacion__direccion h2 {
+          text-transform: uppercase;
+          font-size: 1.375rem;
+       }
+   
+       .ubicacion__direccion p {
+           font-size: 0.75rem;
+       }
+   
+       .ubicacion__direccion iframe {
+           width: 25rem;
+       }
+       
+       .ubicacion__contacto {
+           margin-top: 3rem;
+       } 
+       
+       .ubicacion__contacto h3 {
+           font-size: 0.75rem;
+       }    
+       
+       .ubicacion__contacto img {
+           height: 1.25rem;
+           width: 1.25rem;
+       }
+   
+       .ubicacion__contacto p {
+           font-size: 0.75rem;
+       }
+   
+   }
+   
+   

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Devil's Burger</title>
+    <link rel="shortcut icon" href=".././img/favicondevils.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;500;600;700&family=Oswald:wght@300;500;700&family=Vazirmatn:wght@800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href=".././css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src=".././img/logodevils1.png" alt="logo">
+        <nav class="header__navbar">
+            <ul class="header__navbar--principal">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="hamburguesas.html">Hamburguesas</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>                  
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="tcn.html">Trabajá en Devil's</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="comunicate">
+        <div id="texto" class="comunicate__texto">
+            <h1>Comunicate con nosotros</h1>
+            <h3>¡Completá el formulario y te respondemos a la brevedad!</h3>
+        </div>
+        <div id="formulario" class="comunicate__formulario">
+            <form action="">
+               <fieldset>
+                    <legend>Datos del formulario</legend>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre" required>
+                    <br>
+                    <br>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ingresá tu mail" required>
+                    <br>
+                    <br>
+                    <label for="num">Celular</label>
+                    <input type="number" name="num" id="num" placeholder="Igresá tu celular" required>
+                    <br>
+                    <br>
+                    <label for="mensaje">Mensaje</label>
+                    <br>
+                    <textarea name="mensaje" id="mensaje" placeholder="Dejá tu mensaje" cols="50" rows="15" requiered></textarea> 
+                    <br>
+                    <br>
+                    <input type="submit">
+                    <input type="reset" value="Limpiar">
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__contenido--logo">
+                <a href="../index.html"><img src=".././img/logodevils2.png" alt="logo footer"></a>
+            </div>
+            <div class="footer__contenido--ubicacion">
+                <a href="ubicacion.html">Conocé nuestro local</a>
+            </div>   
+            <div class="footer__contenido--redes">    
+                <p>Seguinos en nuestras redes</p>
+            </div>
+            <div class="footer__contenido--iconos">
+                <a href="https://facebook.com/"><img src=".././img/logoface.png" alt="logo facebook"></a>
+                <a href="https://instagram.com/"><img src=".././img/logoinsta.png" alt="logo instagram"></a>
+            </div>
+        </div>
+        </footer>
+    </footer>
+</body>
+</html>
