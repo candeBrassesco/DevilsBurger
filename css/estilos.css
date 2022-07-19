@@ -29,14 +29,8 @@ body {
 
 /*------------- NAVBAR -------------*/ 
 
-.header__navbar ul {
+.header__navbar {
     padding: 1rem;
-    list-style-type: none;
-    text-align: right;
-}
-
-.header__navbar li {
-    display: inline-block;
 }
 
 .header__navbar a {
@@ -57,7 +51,11 @@ body {
 a:hover, a:focus {
     background-size: 100% 2px;
 }
-   
+
+.header__navbar button {
+    background-color:#f13232;
+    border-color:beige;
+}
 
 /*------------- CONTENEDOR --------------*/
 
