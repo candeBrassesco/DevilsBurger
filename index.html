@@ -17,7 +17,7 @@
 <body>
     <header class="header">
         <div class="conteniner__fluid">
-        <img class="header__logo" src="img/logodevils1.png" alt="logo">
+            <img class="img-fluid header__logo" src="img/logodevils1.png" alt="logo">
         <nav class="navbar navbar-expand-lg  navbar-dark header__navbar">
             <div class="container-fluid">
               <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,18 +46,20 @@
           </nav>
         </div>
     </header>
-     
-    <div class="contenedor__grid">
-        <section id="parrafo" class="contenido">
-            <div class="contenido__parrafo">
-                <h1 class="contenido__parrafo--titulo">El infierno más tentador, la hamburguesa más rica.</h1>
-                <p class="contenido__parrafo--texto">Hecha de carne 100% vacuna e ingredientes de calidad.</p>
+    
+    <div class="card mb-3 contenedor">
+        <div class="row g-0 contenido">
+            <div class="col-md-6 col-xs-12">
+                <div class="card-body contenido__parrafo">
+                    <h1 class="card-title contenido__parrafo--titulo">El infierno más tentador, la hamburguesa más rica.</h1>
+                    <p class="card-text contenido__parrafo--texto">Hecha de carne 100% vacuna e ingredientes de calidad.</p>
+                </div>
             </div>
-        </section>
-        <section id="imagen" class="lateral">
-            <img class="lateral__imagen" src="./img/burgercontenido.png" alt="imagen lateral derecha">
-        </section>
-    </div> 
+            <div class="col-md-6 col-xs-12 lateral">
+                <img src="./img/burgercontenido.png" class="img-fluid mx-auto" alt="imagen lateral derecha">
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer__contenido">
@@ -77,6 +79,7 @@
         </div>
         </footer>
     </footer>
+    
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
 </body>

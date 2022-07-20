@@ -47,38 +47,30 @@
         </div>
     </header>
 
-    <section class="comunicate">
+    <div class=" conteiner-fluid comunicate">
         <div id="texto" class="comunicate__texto">
             <h1>Comunicate con nosotros</h1>
-            <h3>¡Completá el formulario y te respondemos a la brevedad!</h3>
+            <p>¡Completá el formulario y te respondemos a la brevedad!</p>
         </div>
-        <div id="formulario" class="comunicate__formulario">
-            <form action="">
-               <fieldset>
-                    <legend>Datos del formulario</legend>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre" required>
-                    <br>
-                    <br>
-                    <label for="correo">Correo electrónico</label>
-                    <input type="email" name="correo" id="correo" placeholder="Ingresá tu mail" required>
-                    <br>
-                    <br>
-                    <label for="num">Celular</label>
-                    <input type="number" name="num" id="num" placeholder="Igresá tu celular" required>
-                    <br>
-                    <br>
-                    <label for="mensaje">Mensaje</label>
-                    <br>
-                    <textarea name="mensaje" id="mensaje" placeholder="Dejá tu mensaje" cols="50" rows="15" requiered></textarea> 
-                    <br>
-                    <br>
-                    <input type="submit">
-                    <input type="reset" value="Limpiar">
-                </fieldset>
-            </form>
+        <div id="formulario" class="conteiner-fluid comunicate__formulario">
+            <div class="mb-3 comunicate__formulario--nombre">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="nombre" placeholder="Ingresá tu nombre">
+            </div>
+            <div class="mb-3 comunicate__formulario--mail">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+            </div>
+            <div class="mb-3 comunicate__formulario--celular">
+                <label for="celular" class="form-label">Celular</label>
+                <input type="email" class="form-control" id="celular" placeholder="Ingresá tu celular">
+            </div>
+            <div class="mb-3 comunicate__formulario--mensaje">
+                <label for="comentario" class="form-label">Dejá tu comentario</label>
+                <textarea class="form-control" id="comentario" rows="3"></textarea>
+            </div>
         </div>
-    </section>
+    </div>
 
     <footer class="footer">
         <div class="footer__contenido">

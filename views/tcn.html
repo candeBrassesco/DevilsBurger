@@ -48,38 +48,31 @@
 
     <section class="sumate">
         <div id="texto" class="sumate__texto">
-             <h1>Sumate al Devil's team</h1>
-             <p>Si estas interesado en formar parte de nuestro equipo, completá el siguiente formulario</p>
+            <h1>Sumate al Devil's team</h1>
+            <p>Si estas interesado en formar parte de nuestro equipo, completá el siguiente formulario</p>
         </div>
         <div id="formulario" class="sumate__formulario">
-            <form action="" enctype="multipart/form-data">
-                <fieldset>
-                    <legend>Datos personales</legend>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre"required>
-                    <br>
-                    <br>
-                    <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingresá tu apellido" required>
-                    <br>
-                    <br>
-                    <label for="correo">Correo electrónico</label>
-                    <input type="email" name="correo" id="correo" placeholder="Ingresá tu correo" required>
-                    <br>
-                    <br>
-                    <label for="celular">Celular</label>
-                    <input type="number" name="celular" id="celular" placeholder="Ingresá tu celular" required>
-                    <br>
-                    <br>
-                    <label for="cv">Dejanos tu cv</label>
-                    <input type="file" name="cv" id="cv" required>
-                    <br>
-                    <br>
-                    <input type="submit">
-                    <input type="reset" value="Limpiar">
-                </fieldset>
-            </form>
-    </div>
+            <div class="mb-3 sumate__formulario--nombre">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="email" class="form-control" id="nombre" placeholder="Ingresá tu nombre">
+            </div>
+            <div class="mb-3 sumate__formulario--apellido">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="email" class="form-control" id="nombre" placeholder="Ingresá tu apellido">
+            </div>
+            <div class="mb-3 sumate__formulario--mail">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+            </div>
+            <div class="mb-3 sumate__formulario--celular">
+                <label for="celular" class="form-label">Celular</label>
+                <input type="email" class="form-control" id="celular" placeholder="Ingresá tu celular">
+            </div>
+            <div class="mb-3 sumate__formulario--cv">
+                <label for="cv" class="form-label">Dejanos tu cv</label>
+                <input class="form-control" type="file" id="cv">
+            </div>          
+        </div>
     </section>
     
     <footer class="footer">
