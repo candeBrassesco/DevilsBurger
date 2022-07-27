@@ -1,110 +1,83 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
-    font-family: 'Oswald', sans-serif;
-    /*font-family: 'Vazirmatn', sans-serif;*/
-    /*font-family: 'Antonio', sans-serif;*/
-    background-color: #191818;
-}
+  font-family: 'Oswald', sans-serif;
+  /*font-family: 'Vazirmatn', sans-serif;*/
+  /*font-family: 'Antonio', sans-serif;*/
+  background-color: #191818; }
 
-/*------------- HEADER -------------*/ 
-
+/*------------- HEADER -------------*/
 .header {
-    background-image: url(.././img/backheaderr.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header__logo {
+  background-image: url(.././img/backheaderr.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .header__logo {
     margin-left: 0.5rem;
     width: 7.5em;
-    height:7.5em;
-}
-
-/*------------- NAVBAR -------------*/ 
-
-.header__navbar {
-    padding: 1rem;
-}
-
-.header__navbar a {
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-    text-transform: uppercase;
-    margin-right: 1rem;
-    padding: 1.2rem;
-    line-height:1rem;
-    color:beige;
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-a:hover, a:focus {
-    background-size: 100% 2px;
-}
-
-.header__navbar button {
-    background-color:#f13232;
-    border-color:beige;
-}
+    height: 7.5em; }
+  .header__navbar {
+    padding: 1rem; }
+    .header__navbar a {
+      text-decoration: none;
+      background-image: linear-gradient(currentColor, currentColor);
+      background-position: 0% 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size .3s;
+      text-transform: uppercase;
+      margin-right: 1rem;
+      padding: 1.2rem;
+      line-height: 1rem;
+      color: beige;
+      font-size: 1.4rem;
+      font-weight: 600; }
+      .header__navbar a:hover, .header__navbar a :focus {
+        background-size: 100% 2px; }
+    .header__navbar button {
+      background-color: #f13232;
+      border-color: beige; }
 
 /*------------- CONTENEDOR --------------*/
-
 .contenedor {
-    background-color:#191818;
-    border: #191818;
-}
-
-/*------------ CONTENIDO ------------*/
+  background-color: #191818;
+  border: #191818; }
 
 .contenido {
-    background-color: #191818;
-    color:beige;
-    padding: 1rem;
-    line-height: 1.6;
-}
-
-.contenido__parrafo--titulo {
+  background-color: #191818;
+  color: beige;
+  padding: 1rem;
+  line-height: 1.6; }
+  .contenido__parrafo--titulo {
     font-weight: 700;
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: left;
     margin-top: 5%;
     padding: 0.5rem;
-    text-align: center;
-}
-
-.contenido__parrafo--texto {
+    text-align: center; }
+  .contenido__parrafo--texto {
     font-size: 1em;
     padding: 1rem;
-    text-align: center;
-}
+    text-align: center; }
 
 /*----------- CONTENIDO LATERAL ------------*/
-
 .lateral {
-    background-color: #191818;
-    padding: 2rem;
-}
+  background-color: #191818;
+  padding: 2rem; }
+
 /*---------------- FOOTER ----------------*/
-
 .footer {
-    background-image: url(.././img/fondofooter.png);
-    background-color: #191818;
-    background-position: center;
-    color:beige;
-    clear: both;
-}
-
-.footer__contenido {
+  background-image: url(.././img/fondofooter.png);
+  background-color: #191818;
+  background-position: center;
+  color: beige;
+  clear: both; }
+  .footer__contenido {
     display: grid;
     align-content: space-evenly;
     justify-content: space-evenly;
@@ -112,681 +85,393 @@ a:hover, a:focus {
     justify-items: center;
     font-size: 1.2em;
     padding: 1rem;
-    height:25rem;
-}
-
-.footer__contenido a {
-    text-decoration: none;
-    margin-right: 1rem;
-    padding: 1.2rem;
-    color:beige;
-}
-
-.footer__contenido--logo a {
-    font-size: 1.2em;
-}
-
-.footer__contenido--logo img {
+    height: 25rem; }
+    .footer__contenido a {
+      text-decoration: none;
+      margin-right: 1rem;
+      padding: 1.2rem;
+      color: beige; }
+  .footer__contenido--logo a {
+    font-size: 1.2em; }
+  .footer__contenido--logo img {
     width: 6.55em;
-    height: 3em;
-}
-
-.footer__contenido--redes p {
-    font-size: 1.2em;
-}
-
-.footer__contenido--iconos img {
+    height: 3em; }
+  .footer__contenido--redes p {
+    font-size: 1.2em; }
+  .footer__contenido--iconos img {
     width: 3.125rem;
-    height: 3.125rem;
-}
-
+    height: 3.125rem; }
 
 /*------------- CONTACTO -------------*/
-
 .comunicate {
-    background-color: #191818;
-    color: beige;
-    display: grid;
-    grid-template-areas:
-    "texto"
-    "formulario"
-    ;
-    align-content: space-evenly;
-    justify-content: center;
-    justify-items: center;
-    height: 50em;
-}
-
-div#texto {
-    grid-area: texto;
-}
-
-div#formulario {
-    grid-area: formulario;
-}
-
-.comunicate__texto {
-    text-align: center;
-}
-
-.comunicate__texto h1 {
-    font-size: 1.5em;
-    padding: 2rem;
-    text-transform: uppercase;
-}
-
-.comunicate__texto p {
-   font-size: 1em;
-}
-
-.comunicate__formulario {
+  background-color: #191818;
+  color: beige;
+  display: grid;
+  grid-template-areas: "texto" "formulario";
+  align-content: space-evenly;
+  justify-content: center;
+  justify-items: center;
+  height: 50em; }
+  .comunicate div#texto {
+    grid-area: texto; }
+  .comunicate div#formulario {
+    grid-area: formulario; }
+  .comunicate__texto {
+    text-align: center; }
+    .comunicate__texto h1 {
+      font-size: 1.5em;
+      padding: 2rem;
+      text-transform: uppercase; }
+    .comunicate__texto p {
+      font-size: 1em; }
+  .comunicate__formulario {
     font-size: 1.25rem;
-    width: 15em;
-}
-
+    width: 15em; }
 
 /*-------------- HAMBURGUESAS -----------*/
-
 .menu {
-    background-color: #191818;
-    color: beige;
-}
-
-.menu h1 {
+  background-color: #191818;
+  color: beige; }
+  .menu h1 {
     text-transform: uppercase;
     text-align: center;
     padding: 3.5rem;
-    font-size: 1.5em;
-}
-
-.menu img {
+    font-size: 1.5em; }
+  .menu img {
     width: 11em;
-    height: 11em;
-}
-
-.menu__grid {
+    height: 11em; }
+  .menu__grid {
     display: grid;
-    grid-template-areas:
-    "agares"
-    "belcebu"
-    "paimon"
-    "astaroth"
-    "amon"
-    "samael"
-    "lilith"
-    "lucifer"
-    ;
+    grid-template-areas: "agares" "belcebu" "paimon" "astaroth" "amon" "samael" "lilith" "lucifer";
     grid-template-columns: 20em;
     grid-template-rows: 30em 30em 30em 30em 30em 30em 30em 30em;
     justify-content: center;
     align-content: space-evenly;
-    height: 290em;
-}
-
-div#agares {
-    grid-area: agares;
-}
-
-div#belcebu {
-    grid-area: belcebu;
-}
-
-div#paimon {
-    grid-area: paimon;
-}
-
-div#astaroth {
-    grid-area: astaroth;
-}
-
-.menu__grid div {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-}
-
-.menu__grid p {
-    text-align: center;
-    font-size: 0.8em;
-    padding: 1rem;
-}
-
-.menu__grid h2 {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    color:#fff;
-    animation: neon 1.5s ease-in-out infinite alternate;
-}
+    height: 290em; }
+    .menu__grid div#agares {
+      grid-area: agares; }
+    .menu__grid div#belcebu {
+      grid-area: belcebu; }
+    .menu__grid div#paimon {
+      grid-area: paimon; }
+    .menu__grid div#astaroth {
+      grid-area: astaroth; }
+    .menu__grid div#amon {
+      grid-area: amon; }
+    .menu__grid div#samael {
+      grid-area: samael; }
+    .menu__grid div#lilith {
+      grid-area: lilith; }
+    .menu__grid div#lucifer {
+      grid-area: lucifer; }
+    .menu__grid div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: center;
+      align-items: center; }
+    .menu__grid p {
+      text-align: center;
+      font-size: 0.8em;
+      padding: 1rem; }
+    .menu__grid h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      color: #fff;
+      animation: neon 1.5s ease-in-out infinite alternate; }
 
 @keyframes neon {
-    from {
-      text-shadow: 0 0 10px rgb(240, 233, 233), 0 0 20px rgb(240, 233, 233), 0 0 30px rgb(240, 233, 233), 0 0 40px #AD1405,
-        0 0 70px #860E02, 0 0 80px #860E02, 0 0 100px #860E02, 0 0 150px #860E02;
-    }
-    to {
-      text-shadow: 0 0 5px rgb(240, 233, 233), 0 0 10px rgb(240, 233, 233), 0 0 15px rgb(240, 233, 233), 0 0 20px #AD1405,
-        0 0 35px #860E02, 0 0 40px #860E02, 0 0 50px #860E02, 0 0 75px #860E02;
-    }
-  }
+  from {
+    text-shadow: 0 0 10px #f0e9e9, 0 0 20px #f0e9e9, 0 0 30px #f0e9e9, 0 0 40px #AD1405, 0 0 70px #860E02, 0 0 80px #860E02, 0 0 100px #860E02, 0 0 150px #860E02; }
+  to {
+    text-shadow: 0 0 5px #f0e9e9, 0 0 10px #f0e9e9, 0 0 15px #f0e9e9, 0 0 20px #AD1405, 0 0 35px #860E02, 0 0 40px #860E02, 0 0 50px #860E02, 0 0 75px #860E02; } }
 
-/*-------------- TRABAJÁ CON NOSOTROS ---------*/
-
+/*-------------- TRABAJÁ CON NOSOTROS -----------*/
 .sumate {
-    background-color: #191818;
-    color: beige;
-    display: grid;
-    grid-template-areas:
-    "texto"
-    "formulario"
-    ;
-    align-content: space-evenly;
-    justify-content: center;
-    justify-items: center;
-    height: 55rem;
-}
-
-div#texto {
-    grid-area: texto;
-}
-
-div#formulario {
-    grid-area: formulario;
-}
-
-.sumate__texto {
-    text-align: center;
-}
-
-.sumate__texto h1 {
-    font-size: 1.5em;
-    padding: 2rem;
-    text-transform: uppercase;
-}
-
-.sumate__texto p {
-   font-size: 1em;
-}
-
-.sumate__formulario {
+  background-color: #191818;
+  color: beige;
+  display: grid;
+  grid-template-areas: "texto" "formulario";
+  align-content: space-evenly;
+  justify-content: center;
+  justify-items: center;
+  height: 55rem; }
+  .sumate div#texto {
+    grid-area: texto; }
+  .sumate div#formulario {
+    grid-area: formulario; }
+  .sumate__texto {
+    text-align: center; }
+    .sumate__texto h1 {
+      font-size: 1.5em;
+      padding: 2rem;
+      text-transform: uppercase; }
+    .sumate__texto p {
+      font-size: 1em; }
+  .sumate__formulario {
     font-size: 1.25em;
-    width: 15em;
-}
+    width: 15em; }
 
 /*--------------- UBICACIÓN ------------*/
-
 .ubicacion {
-    padding: 3rem;
-    background-color: #191818;
-    color: beige;
-}
-
-.ubicacion__flex {
+  padding: 3rem;
+  background-color: #191818;
+  color: beige; }
+  .ubicacion__flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.ubicacion__direccion {
+    justify-content: space-around; }
+  .ubicacion__direccion {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
-}
-
-.ubicacion__direccion h2 {
-   text-transform: uppercase;
-   font-size: 1.5em;
-   text-align: center;
-}
-
-.ubicacion__direccion p { 
-   text-align: center;
-   font-size: 1em;
-}
-
-.ubicacion__direccion iframe {
-    width: 18em;
-    height: 25em;
-}
-
-.ubicacion__contacto {
+    margin-top: 2rem; }
+    .ubicacion__direccion h2 {
+      text-transform: uppercase;
+      font-size: 1.5em;
+      text-align: center; }
+    .ubicacion__direccion p {
+      text-align: center;
+      font-size: 1em; }
+    .ubicacion__direccion iframe {
+      width: 18em;
+      height: 25em; }
+  .ubicacion__contacto {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin-top: 6rem;
-    height: 18.75em;
-} 
+    height: 18.75em; }
+    .ubicacion__contacto h3 {
+      text-transform: uppercase;
+      font-size: 1.25em;
+      text-align: center; }
+    .ubicacion__contacto p {
+      text-align: center;
+      font-size: 1em; }
+    .ubicacion__contacto p#pedido {
+      text-transform: uppercase;
+      font-size: 1em; }
+    .ubicacion__contacto img {
+      height: 2.5em;
+      width: 2.5em; }
 
-.ubicacion__contacto h3 {
-    text-transform: uppercase;
-    font-size: 1.25em;
-    text-align: center;
-}
-
-.ubicacion__contacto p {
-    text-align: center;
-    font-size: 1em;
-}
-
-.ubicacion__contacto p#pedido {
-    text-transform: uppercase;
-    font-size: 1em;
-}
-
-.ubicacion__contacto img {
-    height: 2.5em;
-    width: 2.5em;
-}
-
-
-
- /*----------- MOBILE ------------*/  
-
- @media (min-width:320px) and (max-width:576px){
-   
-    .header__logo {
-        margin-left: 0.1rem;
-        width: 8em;
-        height: 8em;
-    }
-
-    .ubicacion__direccion iframe {
-        width: 19em;
-    }
-}
+/*----------- MOBILE ------------*/
+@media (min-width: 320px) and (max-width: 576px) {
+  .header__logo {
+    margin-left: 0.1rem;
+    width: 8em;
+    height: 8em; }
+  .ubicacion__direccion iframe {
+    width: 19em; } }
 
 /*----------- TABLET ------------*/
-
-@media (min-width:577px) and (max-width:768px) {
-
-    .header__logo {
-        margin-left: 0.3rem;
-        width: 10em;
-        height: 10em;
-    }
-  
-    .contenido__parrafo--titulo {
-        margin-top: 20%;
-    }
-
-    .menu img {
-        width: 15em;
-        height: 15em;
-    }
-
-    .menu__grid {
-        grid-template-columns: 30em;
-        grid-template-rows: 35em 35em 35em 35em 35em 35em 35em 35em;
-    }
-
+@media (min-width: 577px) and (max-width: 768px) {
+  .header__logo {
+    margin-left: 0.3rem;
+    width: 10em;
+    height: 10em; }
+  .contenido__parrafo--titulo {
+    margin-top: 20%; }
+  .menu img {
+    width: 15em;
+    height: 15em; }
+  .menu__grid {
+    grid-template-columns: 30em;
+    grid-template-rows: 35em 35em 35em 35em 35em 35em 35em 35em; }
     .menu__grid p {
-        font-size: 1em;
-    }
-
+      font-size: 1em; }
     .menu__grid h2 {
-        font-size: 1.5em;
-    }
-
-    .comunicate__formulario {
-        width: 20em;
-    }
-
-    .sumate__formulario {
-        width: 20em;
-    }
-
-    .ubicacion__direccion iframe {
-        width: 24em;
-    }
-
-}
-
+      font-size: 1.5em; }
+  .comunicate__formulario {
+    width: 20em; }
+  .sumate__formulario {
+    width: 20em; }
+  .ubicacion__direccion iframe {
+    width: 24em; } }
 
 /*--------- PANTALLA LARGE ----------*/
-
-@media (min-width:769px) and (max-width:992px) {
-
-    .header__logo {
-        margin-left: 0.3rem;
-        width: 10em;
-        height: 10em;
-    }
-
-    .contenido__parrafo--titulo {
-        margin-top: 20%;
-    }
-
-    .menu img {
-        width: 15em;
-        height: 15em;
-    }
-
-    .menu__grid {
-        grid-template-columns: 30em;
-        grid-template-rows: 35em 35em 35em 35em 35em 35em 35em 35em;
-    }
-
+@media (min-width: 769px) and (max-width: 992px) {
+  .header__logo {
+    margin-left: 0.3rem;
+    width: 10em;
+    height: 10em; }
+  .contenido__parrafo--titulo {
+    margin-top: 20%; }
+  .menu img {
+    width: 15em;
+    height: 15em; }
+  .menu__grid {
+    grid-template-columns: 30em;
+    grid-template-rows: 35em 35em 35em 35em 35em 35em 35em 35em; }
     .menu__grid p {
-        font-size: 1em;
-    }
-
+      font-size: 1em; }
     .menu__grid h2 {
-        font-size: 1.5em;
-    }
-
-    .comunicate__formulario {
-        width: 20em;
-    }
-
-    .sumate__formulario {
-        width: 20em;
-    }
-
-    .ubicacion__direccion iframe {
-        width: 24em;
-    }
-
-}
-
+      font-size: 1.5em; }
+  .comunicate__formulario {
+    width: 20em; }
+  .sumate__formulario {
+    width: 20em; }
+  .ubicacion__direccion iframe {
+    width: 24em; } }
 
 /*----------- DESKTOP -----------*/
-
-@media (min-width:993px) and (max-width:1024px){
-
-    .header__logo {
-        height: 15em;
-        width: 15em;
-    }
-
-    .contenido__parrafo--titulo {
-        font-size: 2em;
-        margin-top: 23%;
-    }
-
-    .contenido__parrafo--texto {
-        font-size: 1.5em;
-    }
-
-    .comunicate__texto h1{
-        font-size: 2em;
-    }
-
-    .comunicate__texto p {
-        font-size: 1.5em;
-    }
-
-    .menu__grid {
-        grid-template-areas:
-    "agares belcebu"
-    "paimon astaroth"
-    "amon samael"
-    "lilith lucifer"
-    ;
+@media (min-width: 993px) and (max-width: 1024px) {
+  .header__logo {
+    height: 15em;
+    width: 15em; }
+  .contenido__parrafo--titulo {
+    font-size: 2em;
+    margin-top: 23%; }
+  .contenido__parrafo--texto {
+    font-size: 1.5em; }
+  .comunicate__texto h1 {
+    font-size: 2em; }
+  .comunicate__texto p {
+    font-size: 1.5em; }
+  .comunicate__formulario {
+    width: 20em; }
+  .menu img {
+    width: 20em;
+    height: 20em; }
+  .menu h1 {
+    font-size: 2em;
+    margin-top: 5%; }
+  .menu__grid {
+    grid-template-areas: "agares belcebu" "paimon astaroth" "amon samael" "lilith lucifer";
     grid-template-columns: 29em 29em;
     grid-column-gap: 3em;
     grid-template-rows: 38em 38em 38em 38em;
     justify-content: center;
     align-content: space-evenly;
     align-items: start;
-    height: 205em;
-    }
-
+    height: 205em; }
     .menu__grid div {
-        height: 35em;
-    }
-
-    div#astaroth {
-        height: 36.8rem;
-    }
-    
-    .menu img {
-        width: 20em;
-        height: 20em;
-    }
-
-    .menu h1 {
-        font-size: 2em;
-        margin-top: 5%;
-    }
-
+      height: 35em; }
+    .menu__grid div#astaroth {
+      height: 36.8rem; }
     .menu__grid h2 {
-        font-size: 1.5em;
-    }
-
+      font-size: 1.5em; }
     .menu__grid p {
-        font-size: 1.2em;
-    }
-
-    .sumate__texto h1 {
-        font-size: 2em;
-    }
-
-    .sumate__texto p {
-        font-size: 1.5em;
-    }
-
-    .ubicacion__direccion h2 {
-        font-size: 2em;
-    }
-
-    .ubicacion__direccion p {
-        font-size: 1.25em;
-    }
-
-    .comunicate__formulario {
-        width: 20em;
-    }
-
-    .sumate__formulario {
-        width: 20em;
-    }
-
-    .ubicacion__direccion iframe {
-        width: 30em;
-    }
-
-}
+      font-size: 1.2em; }
+  .sumate__texto h1 {
+    font-size: 2em; }
+  .sumate__texto p {
+    font-size: 1.5em; }
+  .sumate__formulario {
+    width: 20em; }
+  .ubicacion__direccion h2 {
+    font-size: 2em; }
+  .ubicacion__direccion p {
+    font-size: 1.25em; }
+  .ubicacion__direccion iframe {
+    width: 30em; } }
 
 /*-------------- PANTALLA GRANDE ------------*/
-
-@media (min-width:1025px) and (max-width:1200px) {
-    .header__logo {
-        height: 15em;
-        width: 15em;
-    }
-
-    .contenido__parrafo--titulo {
-        font-size: 2em;
-        margin-top: 23%;
-    }
-
-    .contenido__parrafo--texto {
-        font-size: 1.5em;
-    }
-
-    .comunicate__texto h1{
-        font-size: 2em;
-    }
-
-    .comunicate__texto p {
-        font-size: 1.5em;
-    }
-
-    .menu__grid {
-        grid-template-areas:
-    "agares belcebu"
-    "paimon astaroth"
-    "amon samael"
-    "lilith lucifer"
-    ;
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .header__logo {
+    height: 15em;
+    width: 15em; }
+  .contenido__parrafo--titulo {
+    font-size: 2em;
+    margin-top: 23%; }
+  .contenido__parrafo--texto {
+    font-size: 1.5em; }
+  .comunicate__texto h1 {
+    font-size: 2em; }
+  .comunicate__texto p {
+    font-size: 1.5em; }
+  .comunicate__formulario {
+    width: 20em; }
+  .menu img {
+    width: 20em;
+    height: 20em; }
+  .menu h1 {
+    font-size: 2em;
+    margin-top: 5%; }
+  .menu__grid {
+    grid-template-areas: "agares belcebu" "paimon astaroth" "amon samael" "lilith lucifer";
     grid-template-columns: 30em 30em;
-    grid-column-gap: 3em;
+    grid-column-gap: 4em;
     grid-template-rows: 38em 38em 38em 38em;
     justify-content: center;
     align-content: space-evenly;
     align-items: start;
-    height: 205em;
-    }
-
+    height: 205em; }
     .menu__grid div {
-        height: 35em;
-    }
-
-    div#astaroth {
-        height: 36.8rem;
-    }
-    
-    .menu img {
-        width: 20em;
-        height: 20em;
-    }
-
-    .menu h1 {
-        font-size: 2em;
-        margin-top: 5%;
-    }
-
+      height: 35em; }
+    .menu__grid div#astaroth {
+      height: 36.8rem; }
     .menu__grid h2 {
-        font-size: 1.5em;
-    }
-
+      font-size: 1.5em; }
     .menu__grid p {
-        font-size: 1.2em;
-    }
-
-    .sumate__texto h1 {
-        font-size: 2em;
-    }
-
-    .sumate__texto p {
-        font-size: 1.5em;
-    }
-
-    .ubicacion__direccion h2 {
-        font-size: 2em;
-    }
-
-    .ubicacion__direccion p {
-        font-size: 1.25em;
-    }
-
-    .comunicate__formulario {
-        width: 20em;
-    }
-
-    .sumate__formulario {
-        width: 20em;
-    }
-
-    .ubicacion__direccion iframe {
-        width: 30em;
-    }
-
-
-}
+      font-size: 1.2em; }
+  .sumate__texto h1 {
+    font-size: 2em; }
+  .sumate__texto p {
+    font-size: 1.5em; }
+  .sumate__formulario {
+    width: 20em; }
+  .ubicacion__direccion h2 {
+    font-size: 2em; }
+  .ubicacion__direccion p {
+    font-size: 1.25em; }
+  .ubicacion__direccion iframe {
+    width: 30em; } }
 
 /*-------------- PANTALLA 1200 --------------*/
-
-@media (min-width:1201px) {
-
-    .header__logo {
-        height: 15em;
-        width: 15em;
-    }
-
-    .contenido__parrafo--titulo {
-        font-size: 2em;
-        margin-top: 23%;
-    }
-
-    .contenido__parrafo--texto {
-        font-size: 1.5em;
-    }
-
-    .comunicate__texto h1{
-        font-size: 2em;
-    }
-
-    .comunicate__texto p {
-        font-size: 1.5em;
-    }
-
-    .menu__grid {
-        grid-template-areas:
-    "agares belcebu"
-    "paimon astaroth"
-    "amon samael"
-    "lilith lucifer"
-    ;
+@media (min-width: 1201px) {
+  .header__logo {
+    height: 15em;
+    width: 15em; }
+  .contenido__parrafo--titulo {
+    font-size: 2em;
+    margin-top: 23%; }
+  .contenido__parrafo--texto {
+    font-size: 1.5em; }
+  .comunicate__texto h1 {
+    font-size: 2em; }
+  .comunicate__texto p {
+    font-size: 1.5em; }
+  .comunicate__formulario {
+    width: 20em; }
+  .menu img {
+    width: 20em;
+    height: 20em; }
+  .menu h1 {
+    font-size: 2em;
+    margin-top: 5%; }
+  .menu__grid {
+    grid-template-areas: "agares belcebu" "paimon astaroth" "amon samael" "lilith lucifer";
     grid-template-columns: 30em 30em;
-    grid-column-gap: 3em;
+    grid-column-gap: 4em;
     grid-template-rows: 38em 38em 38em 38em;
     justify-content: center;
     align-content: space-evenly;
     align-items: start;
-    grid-column-gap: 5em;
-    height: 205em;
-    }
-
+    height: 205em; }
     .menu__grid div {
-        height: 35em;
-    }
-
-    div#astaroth {
-        height: 36.8rem;
-    }
-    
-    .menu img {
-        width: 20em;
-        height: 20em;
-    }
-
-    .menu h1 {
-        font-size: 2em;
-        margin-top: 5%;
-    }
-
+      height: 35em; }
+    .menu__grid div#astaroth {
+      height: 36.8rem; }
     .menu__grid h2 {
-        font-size: 1.5em;
-    }
-
+      font-size: 1.5em; }
     .menu__grid p {
-        font-size: 1.2em;
-    }
-
-    .sumate__texto h1 {
-        font-size: 2em;
-    }
-
-    .sumate__texto p {
-        font-size: 1.5em;
-    }
-
-    .ubicacion__direccion h2 {
-        font-size: 2em;
-    }
-
-    .ubicacion__direccion p {
-        font-size: 1.25em;
-    }
-
-    .comunicate__formulario {
-        width: 20em;
-    }
-
-    .sumate__formulario {
-        width: 20em;
-    }
-
-    .ubicacion__direccion iframe {
-        width: 30em;
-    }
-    
-}
+      font-size: 1.2em; }
+  .sumate__texto h1 {
+    font-size: 2em; }
+  .sumate__texto p {
+    font-size: 1.5em; }
+  .sumate__formulario {
+    width: 20em; }
+  .ubicacion__direccion h2 {
+    font-size: 2em; }
+  .ubicacion__direccion p {
+    font-size: 1.25em; }
+  .ubicacion__direccion iframe {
+    width: 30em; } }
