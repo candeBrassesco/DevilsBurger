@@ -1,0 +1,33 @@
+
+.comunicate {
+    background-color: $color-fondo;
+    color: $color-letra;
+    @include grid (center, center, normal, space-evenly);
+    grid-template-areas:
+    "texto"
+    "formulario"
+    ;
+    height: 50em;
+    div#texto {
+        grid-area: texto;
+    }
+    
+    div#formulario {
+        grid-area: formulario;
+    }
+    &__texto {
+        text-align: center;
+        & h1 {
+            font-size: $fuente-large;
+            padding: 2rem;
+            text-transform: uppercase;
+        }
+        & p {
+            font-size: $fuente-small;
+        }
+    }
+    &__formulario {
+        font-size: $fuente-medium;
+        width: 15em;
+    }
+}

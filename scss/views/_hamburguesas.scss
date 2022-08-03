@@ -1,0 +1,89 @@
+
+.menu {
+    background-color: $color-fondo;
+    color: $color-letra;
+    & h1 {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 3.5rem;
+        font-size: $fuente-large;
+    }
+    & img {
+        width: 11em;
+        height: 11em;
+    }
+    &__grid {
+        @include grid (normal, center, normal, space-evenly);
+        grid-template-areas:
+        "agares"
+        "belcebu"
+        "paimon"
+        "astaroth"
+        "amon"
+        "samael"
+        "lilith"
+        "lucifer"
+        ;
+        grid-template-columns: 20em;
+        grid-template-rows: 30em 30em 30em 30em 30em 30em 30em 30em;
+        height: 290em;
+        div#agares {
+            grid-area: agares;
+        }
+        
+        div#belcebu {
+            grid-area: belcebu;
+        }
+        
+        div#paimon {
+            grid-area: paimon;
+        }
+        
+        div#astaroth {
+            grid-area: astaroth;
+        }
+        
+        div#amon {
+            grid-area: amon;
+        }
+        
+        div#samael {
+            grid-area: samael;
+        }
+        
+        div#lilith {
+            grid-area: lilith;
+        }
+        
+        div#lucifer {
+            grid-area: lucifer;
+        }
+        
+        & div {
+            @include flex (column, space-evenly, center, center);
+            flex-wrap: wrap;
+        }
+        & p {
+            text-align: center;
+            font-size: $fuente-xs;
+            padding: 1rem;
+        }
+        & h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: $fuente-medium;
+            color:#fff;
+            animation: neon 1.5s ease-in-out infinite alternate;
+            @keyframes neon {
+                from {
+                  text-shadow: 0 0 10px rgb(240, 233, 233), 0 0 20px rgb(240, 233, 233), 0 0 30px rgb(240, 233, 233), 0 0 40px #AD1405,
+                    0 0 70px #860E02, 0 0 80px #860E02, 0 0 100px #860E02, 0 0 150px #860E02;
+                }
+                to {
+                  text-shadow: 0 0 5px rgb(240, 233, 233), 0 0 10px rgb(240, 233, 233), 0 0 15px rgb(240, 233, 233), 0 0 20px #AD1405,
+                    0 0 35px #860E02, 0 0 40px #860E02, 0 0 50px #860E02, 0 0 75px #860E02;
+                }
+            }
+        }
+    }
+}

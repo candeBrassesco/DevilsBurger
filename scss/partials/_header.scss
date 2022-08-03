@@ -1,0 +1,37 @@
+
+.header {
+    background-image: url(.././img/backheaderr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__logo{
+        margin-left: 0.1rem;
+        width: 6em;
+        height:6em;
+    }
+    &__navbar{
+        padding: 1rem;
+        & a {
+           text-decoration: none;
+           background-image: linear-gradient(currentColor, currentColor);
+           background-position: 0% 100%;
+           background-repeat: no-repeat;
+           background-size: 0% 2px;
+           transition: background-size .3s;
+           text-transform: uppercase;
+           margin-right: 1rem;
+           padding: 1.2rem;
+           line-height:1rem;
+           color: $color-letra;
+           font-size: 1.4rem;
+           font-weight: 600;
+        &:hover, :focus {
+            background-size: 100% 2px;
+        }
+        }
+        & button {
+            background-color:#f13232;
+            border-color:beige;
+        }
+    }
+}

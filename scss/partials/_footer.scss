@@ -1,0 +1,41 @@
+
+
+.footer {
+    background-image: url(.././img/fondofooter.png);
+    background-color: $color-fondo;
+    background-position: center;
+    color: $color-letra;
+    clear: both;
+    &__contenido {
+        @include grid (center, space-evenly, center, space-evenly);
+        font-size: $fuente-small;
+        padding: 1rem;
+        height:25rem;
+        & a {
+            text-decoration: none;
+            margin-right: 1rem;
+            padding: 1.2rem;
+            color: $color-letra;
+        }
+    }
+    &__contenido--logo {
+        & a {
+            font-size: $fuente-small;
+        }
+        & img {
+            width: 6.55em;
+            height: 3em;
+        }
+    }
+    &__contenido--redes {
+        & p {
+            font-size: $fuente-small;
+        }
+    }
+    &__contenido--iconos {
+        & img {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+}

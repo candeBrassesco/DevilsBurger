@@ -1,25 +1,26 @@
 @charset "UTF-8";
+/*--------- COLORES --------- */
+/*--------- TAMAÑO FUENTE --------*/
+/*--------- FUENTE ----------*/
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@200;300;500;600;700&family=Oswald:wght@300;500;700&family=Vazirmatn:wght@800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: 'Oswald', sans-serif;
-  /*font-family: 'Vazirmatn', sans-serif;*/
-  /*font-family: 'Antonio', sans-serif;*/
+  font-family: "Oswald", sans-serif;
   background-color: #191818; }
 
-/*------------- HEADER -------------*/
 .header {
   background-image: url(.././img/backheaderr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
   .header__logo {
-    margin-left: 0.5rem;
-    width: 7.5em;
-    height: 7.5em; }
+    margin-left: 0.1rem;
+    width: 6em;
+    height: 6em; }
   .header__navbar {
     padding: 1rem; }
     .header__navbar a {
@@ -42,7 +43,37 @@ body {
       background-color: #f13232;
       border-color: beige; }
 
-/*------------- CONTENEDOR --------------*/
+.footer {
+  background-image: url(.././img/fondofooter.png);
+  background-color: #191818;
+  background-position: center;
+  color: beige;
+  clear: both; }
+  .footer__contenido {
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    font-size: 1em;
+    padding: 1rem;
+    height: 25rem; }
+    .footer__contenido a {
+      text-decoration: none;
+      margin-right: 1rem;
+      padding: 1.2rem;
+      color: beige; }
+  .footer__contenido--logo a {
+    font-size: 1em; }
+  .footer__contenido--logo img {
+    width: 6.55em;
+    height: 3em; }
+  .footer__contenido--redes p {
+    font-size: 1em; }
+  .footer__contenido--iconos img {
+    width: 2.5rem;
+    height: 2.5rem; }
+
 .contenedor {
   background-color: #191818;
   border: #191818; }
@@ -65,52 +96,19 @@ body {
     padding: 1rem;
     text-align: center; }
 
-/*----------- CONTENIDO LATERAL ------------*/
 .lateral {
   background-color: #191818;
   padding: 2rem; }
 
-/*---------------- FOOTER ----------------*/
-.footer {
-  background-image: url(.././img/fondofooter.png);
-  background-color: #191818;
-  background-position: center;
-  color: beige;
-  clear: both; }
-  .footer__contenido {
-    display: grid;
-    align-content: space-evenly;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    font-size: 1.2em;
-    padding: 1rem;
-    height: 25rem; }
-    .footer__contenido a {
-      text-decoration: none;
-      margin-right: 1rem;
-      padding: 1.2rem;
-      color: beige; }
-  .footer__contenido--logo a {
-    font-size: 1.2em; }
-  .footer__contenido--logo img {
-    width: 6.55em;
-    height: 3em; }
-  .footer__contenido--redes p {
-    font-size: 1.2em; }
-  .footer__contenido--iconos img {
-    width: 3.125rem;
-    height: 3.125rem; }
-
-/*------------- CONTACTO -------------*/
 .comunicate {
   background-color: #191818;
   color: beige;
   display: grid;
-  grid-template-areas: "texto" "formulario";
-  align-content: space-evenly;
-  justify-content: center;
   justify-items: center;
+  justify-content: center;
+  align-items: normal;
+  align-content: space-evenly;
+  grid-template-areas: "texto" "formulario";
   height: 50em; }
   .comunicate div#texto {
     grid-area: texto; }
@@ -125,10 +123,9 @@ body {
     .comunicate__texto p {
       font-size: 1em; }
   .comunicate__formulario {
-    font-size: 1.25rem;
+    font-size: 1.2em;
     width: 15em; }
 
-/*-------------- HAMBURGUESAS -----------*/
 .menu {
   background-color: #191818;
   color: beige; }
@@ -142,11 +139,13 @@ body {
     height: 11em; }
   .menu__grid {
     display: grid;
+    justify-items: normal;
+    justify-content: center;
+    align-items: normal;
+    align-content: space-evenly;
     grid-template-areas: "agares" "belcebu" "paimon" "astaroth" "amon" "samael" "lilith" "lucifer";
     grid-template-columns: 20em;
     grid-template-rows: 30em 30em 30em 30em 30em 30em 30em 30em;
-    justify-content: center;
-    align-content: space-evenly;
     height: 290em; }
     .menu__grid div#agares {
       grid-area: agares; }
@@ -167,10 +166,10 @@ body {
     .menu__grid div {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
       justify-content: space-evenly;
+      align-items: center;
       align-content: center;
-      align-items: center; }
+      flex-wrap: wrap; }
     .menu__grid p {
       text-align: center;
       font-size: 0.8em;
@@ -188,15 +187,16 @@ body {
   to {
     text-shadow: 0 0 5px #f0e9e9, 0 0 10px #f0e9e9, 0 0 15px #f0e9e9, 0 0 20px #AD1405, 0 0 35px #860E02, 0 0 40px #860E02, 0 0 50px #860E02, 0 0 75px #860E02; } }
 
-/*-------------- TRABAJÁ CON NOSOTROS -----------*/
 .sumate {
   background-color: #191818;
   color: beige;
   display: grid;
-  grid-template-areas: "texto" "formulario";
-  align-content: space-evenly;
-  justify-content: center;
   justify-items: center;
+  justify-content: center;
+  align-items: normal;
+  align-content: space-evenly;
+  display: grid;
+  grid-template-areas: "texto" "formulario";
   height: 55rem; }
   .sumate div#texto {
     grid-area: texto; }
@@ -211,10 +211,9 @@ body {
     .sumate__texto p {
       font-size: 1em; }
   .sumate__formulario {
-    font-size: 1.25em;
+    font-size: 1.2em;
     width: 15em; }
 
-/*--------------- UBICACIÓN ------------*/
 .ubicacion {
   padding: 3rem;
   background-color: #191818;
@@ -222,12 +221,16 @@ body {
   .ubicacion__flex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: normal;
+    align-content: normal;
+    flex-wrap: wrap; }
   .ubicacion__direccion {
     display: flex;
     flex-direction: column;
+    justify-content: normal;
     align-items: center;
+    align-content: normal;
     margin-top: 2rem; }
     .ubicacion__direccion h2 {
       text-transform: uppercase;
@@ -242,14 +245,15 @@ body {
   .ubicacion__contacto {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    align-content: normal;
+    flex-wrap: wrap;
     margin-top: 6rem;
     height: 18.75em; }
     .ubicacion__contacto h3 {
       text-transform: uppercase;
-      font-size: 1.25em;
+      font-size: 1.2em;
       text-align: center; }
     .ubicacion__contacto p {
       text-align: center;
@@ -293,7 +297,21 @@ body {
   .sumate__formulario {
     width: 20em; }
   .ubicacion__direccion iframe {
-    width: 24em; } }
+    width: 24em; }
+  .footer__contenido {
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    font-size: 1.2em; }
+  .footer__contenido--logo a {
+    font-size: 1.2em; }
+  .footer__contenido--redes p {
+    font-size: 1.2em; }
+  .footer__contenido--iconos img {
+    width: 3rem;
+    height: 3rem; } }
 
 /*--------- PANTALLA LARGE ----------*/
 @media (min-width: 769px) and (max-width: 992px) {
@@ -318,7 +336,21 @@ body {
   .sumate__formulario {
     width: 20em; }
   .ubicacion__direccion iframe {
-    width: 24em; } }
+    width: 24em; }
+  .footer__contenido {
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    font-size: 1.2em; }
+  .footer__contenido--logo a {
+    font-size: 1.2em; }
+  .footer__contenido--redes p {
+    font-size: 1.2em; }
+  .footer__contenido--iconos img {
+    width: 3rem;
+    height: 3rem; } }
 
 /*----------- DESKTOP -----------*/
 @media (min-width: 993px) and (max-width: 1024px) {
@@ -343,13 +375,15 @@ body {
     font-size: 2em;
     margin-top: 5%; }
   .menu__grid {
+    display: grid;
+    justify-items: normal;
+    justify-content: center;
+    align-items: start;
+    align-content: space-evenly;
     grid-template-areas: "agares belcebu" "paimon astaroth" "amon samael" "lilith lucifer";
     grid-template-columns: 29em 29em;
     grid-column-gap: 3em;
     grid-template-rows: 38em 38em 38em 38em;
-    justify-content: center;
-    align-content: space-evenly;
-    align-items: start;
     height: 205em; }
     .menu__grid div {
       height: 35em; }
@@ -368,9 +402,23 @@ body {
   .ubicacion__direccion h2 {
     font-size: 2em; }
   .ubicacion__direccion p {
-    font-size: 1.25em; }
+    font-size: 1.2em; }
   .ubicacion__direccion iframe {
-    width: 30em; } }
+    width: 30em; }
+  .footer__contenido {
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    font-size: 1.2em; }
+  .footer__contenido--logo a {
+    font-size: 1.2em; }
+  .footer__contenido--redes p {
+    font-size: 1.2em; }
+  .footer__contenido--iconos img {
+    width: 3rem;
+    height: 3rem; } }
 
 /*-------------- PANTALLA GRANDE ------------*/
 @media (min-width: 1025px) and (max-width: 1200px) {
@@ -395,13 +443,15 @@ body {
     font-size: 2em;
     margin-top: 5%; }
   .menu__grid {
+    display: grid;
+    justify-items: normal;
+    justify-content: center;
+    align-items: start;
+    align-content: space-evenly;
     grid-template-areas: "agares belcebu" "paimon astaroth" "amon samael" "lilith lucifer";
     grid-template-columns: 30em 30em;
     grid-column-gap: 4em;
     grid-template-rows: 38em 38em 38em 38em;
-    justify-content: center;
-    align-content: space-evenly;
-    align-items: start;
     height: 205em; }
     .menu__grid div {
       height: 35em; }
@@ -420,9 +470,23 @@ body {
   .ubicacion__direccion h2 {
     font-size: 2em; }
   .ubicacion__direccion p {
-    font-size: 1.25em; }
+    font-size: 1.2em; }
   .ubicacion__direccion iframe {
-    width: 30em; } }
+    width: 30em; }
+  .footer__contenido {
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    font-size: 1.2em; }
+  .footer__contenido--logo a {
+    font-size: 1.2em; }
+  .footer__contenido--redes p {
+    font-size: 1.2em; }
+  .footer__contenido--iconos img {
+    width: 3rem;
+    height: 3rem; } }
 
 /*-------------- PANTALLA 1200 --------------*/
 @media (min-width: 1201px) {
@@ -447,13 +511,15 @@ body {
     font-size: 2em;
     margin-top: 5%; }
   .menu__grid {
+    display: grid;
+    justify-items: normal;
+    justify-content: center;
+    align-items: start;
+    align-content: space-evenly;
     grid-template-areas: "agares belcebu" "paimon astaroth" "amon samael" "lilith lucifer";
     grid-template-columns: 30em 30em;
     grid-column-gap: 4em;
     grid-template-rows: 38em 38em 38em 38em;
-    justify-content: center;
-    align-content: space-evenly;
-    align-items: start;
     height: 205em; }
     .menu__grid div {
       height: 35em; }
@@ -472,6 +538,20 @@ body {
   .ubicacion__direccion h2 {
     font-size: 2em; }
   .ubicacion__direccion p {
-    font-size: 1.25em; }
+    font-size: 1.5em; }
   .ubicacion__direccion iframe {
-    width: 30em; } }
+    width: 30em; }
+  .footer__contenido {
+    display: grid;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    font-size: 1.2em; }
+  .footer__contenido--logo a {
+    font-size: 1.2em; }
+  .footer__contenido--redes p {
+    font-size: 1.2em; }
+  .footer__contenido--iconos img {
+    width: 3rem;
+    height: 3rem; } }

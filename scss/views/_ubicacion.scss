@@ -1,0 +1,50 @@
+
+.ubicacion {
+    padding: 3rem;
+    background-color: $color-fondo;
+    color: $color-letra;
+    &__flex {
+        @include flex (row, space-around, normal, normal);
+        flex-wrap: wrap;
+    }
+    &__direccion {
+        @include flex (column, normal, center, normal);
+        margin-top: 2rem;
+        & h2 {
+            text-transform: uppercase;
+            font-size: $fuente-large;
+            text-align: center;
+        }
+        & p {
+            text-align: center;
+            font-size: $fuente-small;
+        }
+        & iframe {
+            width: 18em;
+            height: 25em;
+        }
+    }
+    &__contacto {
+        @include flex (column, space-around, center, normal);
+        flex-wrap: wrap;
+        margin-top: 6rem;
+        height: 18.75em;
+        & h3 {
+            text-transform: uppercase;
+            font-size: $fuente-medium;
+            text-align: center;
+        }
+        & p {
+            text-align: center;
+            font-size: $fuente-small;
+        }
+        & p#pedido {
+            text-transform: uppercase;
+            font-size: $fuente-small;
+        }
+        & img {
+            height: 2.5em;
+            width: 2.5em;
+        }
+    }
+}

@@ -1,0 +1,517 @@
+ /*----------- MOBILE ------------*/  
+
+ @media (min-width:320px) and (max-width:576px){
+   
+    .header__logo {
+        margin-left: 0.1rem;
+        width: 8em;
+        height: 8em;
+    }
+
+    .ubicacion__direccion iframe {
+        width: 19em;
+    }
+}
+
+/*----------- TABLET ------------*/
+
+@media (min-width:577px) and (max-width:768px) {
+
+    .header__logo {
+        margin-left: 0.3rem;
+        width: 10em;
+        height: 10em;
+    }
+  
+    .contenido__parrafo--titulo {
+        margin-top: 20%;
+    }
+
+    .menu {
+        & img {
+        width: 15em;
+        height: 15em;
+        }
+        &__grid {
+            grid-template-columns: 30em;
+            grid-template-rows: 35em 35em 35em 35em 35em 35em 35em 35em;
+            & p {
+                font-size: $fuente-small;
+            }
+            & h2 {
+                font-size: $fuente-large;
+            }
+        }
+    }
+
+    .comunicate__formulario {
+        width: 20em;
+    }
+
+    .sumate__formulario {
+        width: 20em;
+    }
+
+    .ubicacion__direccion iframe {
+        width: 24em;
+    }
+
+    .footer {
+        &__contenido {
+            @include grid (center, space-evenly, center, space-evenly);
+            font-size: $fuente-medium;
+        }
+        &__contenido--logo {
+            & a {
+                font-size: $fuente-medium;
+            }
+        }
+        &__contenido--redes {
+            & p {
+                font-size: $fuente-medium;
+            }
+        }
+        &__contenido--iconos {
+            & img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+
+}
+
+
+/*--------- PANTALLA LARGE ----------*/
+
+@media (min-width:769px) and (max-width:992px) {
+
+    .header__logo {
+        margin-left: 0.3rem;
+        width: 10em;
+        height: 10em;
+    }
+
+    .contenido__parrafo--titulo {
+        margin-top: 20%;
+    }
+
+    .menu {
+        & img {
+        width: 15em;
+        height: 15em;
+        }
+        &__grid {
+            grid-template-columns: 30em;
+            grid-template-rows: 35em 35em 35em 35em 35em 35em 35em 35em;
+            & p {
+                font-size: $fuente-small;
+            }
+            & h2 {
+                font-size: $fuente-large;
+            }
+        }
+    }
+
+    .comunicate__formulario {
+        width: 20em;
+    }
+
+    .sumate__formulario {
+        width: 20em;
+    }
+
+    .ubicacion__direccion iframe {
+        width: 24em;
+    }
+
+    .footer {
+        &__contenido {
+            @include grid (center, space-evenly, center, space-evenly);
+            font-size: $fuente-medium;
+        }
+        &__contenido--logo {
+            & a {
+                font-size: $fuente-medium;
+            }
+        }
+        &__contenido--redes {
+            & p {
+                font-size: $fuente-medium;
+            }
+        }
+        &__contenido--iconos {
+            & img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+
+}
+
+
+/*----------- DESKTOP -----------*/
+
+@media (min-width:993px) and (max-width:1024px){
+
+    .header__logo {
+        height: 15em;
+        width: 15em;
+    }
+
+    .contenido {
+        &__parrafo--titulo {
+            font-size: $fuente-xl;
+            margin-top: 23%;
+        }
+        &__parrafo--texto {
+            font-size: $fuente-large;
+        }
+    }
+
+    .comunicate {
+        &__texto {
+            & h1 {
+                font-size: $fuente-xl;
+            }
+            & p {
+                font-size: $fuente-large;
+            }  
+        }
+        &__formulario {
+            width: 20em;
+        }
+    }
+
+    .menu {
+        & img {
+            width: 20em;
+            height: 20em;
+        }
+        & h1 {
+            font-size: $fuente-xl;
+            margin-top: 5%;
+        }
+        &__grid {
+            @include grid (normal, center, start, space-evenly);
+            grid-template-areas:
+           "agares belcebu"
+           "paimon astaroth"
+           "amon samael"
+           "lilith lucifer"
+            ;
+            grid-template-columns: 29em 29em;
+            grid-column-gap: 3em;
+            grid-template-rows: 38em 38em 38em 38em;
+            height: 205em;
+            & div {
+            height: 35em;
+            }
+            & div#astaroth {
+                height: 36.8rem;
+            }
+            & h2 {
+                font-size: $fuente-large;
+            }
+            & p {
+                font-size: $fuente-medium;
+            }
+        }
+    }
+
+    .sumate {
+        &__texto {
+            & h1 {
+                font-size: $fuente-xl;
+            }
+            & p {
+                font-size: $fuente-large;
+            }
+        }
+        &__formulario {
+            width: 20em;
+        }
+    }
+
+    .ubicacion {
+        &__direccion {
+            & h2 {
+                font-size: $fuente-xl;
+            }
+            & p {
+                font-size: $fuente-medium;
+            }
+            & iframe {
+                width: 30em;
+            }
+        }
+    }
+
+    .footer {
+        &__contenido {
+            @include grid (center, space-evenly, center, space-evenly);
+            font-size: $fuente-medium;
+        }
+        &__contenido--logo {
+            & a {
+                font-size: $fuente-medium;
+            }
+        }
+        &__contenido--redes {
+            & p {
+                font-size: $fuente-medium;
+            }
+        }
+        &__contenido--iconos {
+            & img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+}
+
+/*-------------- PANTALLA GRANDE ------------*/
+
+@media (min-width:1025px) and (max-width:1200px) {
+    
+    .header__logo {
+        height: 15em;
+        width: 15em;
+    }
+
+    .contenido {
+        &__parrafo--titulo {
+            font-size: $fuente-xl;
+            margin-top: 23%;
+        }
+        &__parrafo--texto {
+            font-size: $fuente-large;
+        }
+    }
+
+    .comunicate {
+        &__texto {
+            & h1 {
+                font-size: $fuente-xl;
+            }
+            & p {
+                font-size: $fuente-large;
+            }  
+        }
+        &__formulario {
+            width: 20em;
+        }
+    }
+
+    .menu {
+        & img {
+            width: 20em;
+            height: 20em;
+        }
+        & h1 {
+            font-size: $fuente-xl;
+            margin-top: 5%;
+        }
+        &__grid {
+            @include grid (normal, center, start, space-evenly);
+            grid-template-areas:
+           "agares belcebu"
+           "paimon astaroth"
+           "amon samael"
+           "lilith lucifer"
+            ;
+            grid-template-columns: 30em 30em;
+            grid-column-gap: 4em;
+            grid-template-rows: 38em 38em 38em 38em;
+            height: 205em;
+            & div {
+            height: 35em;
+            }
+            & div#astaroth {
+                height: 36.8rem;
+            }
+            & h2 {
+                font-size: $fuente-large;
+            }
+            & p {
+                font-size: $fuente-medium;
+            }
+        }
+    }
+
+    .sumate {
+        &__texto {
+            & h1 {
+                font-size: $fuente-xl;
+            }
+            & p {
+                font-size: $fuente-large;
+            }
+        }
+        &__formulario {
+            width: 20em;
+        }
+    }
+
+    .ubicacion {
+        &__direccion {
+            & h2 {
+                font-size: $fuente-xl;
+            }
+            & p {
+                font-size: $fuente-medium;
+            }
+            & iframe {
+                width: 30em;
+            }
+        }
+    }
+
+    .footer {
+        &__contenido {
+            @include grid (center, space-evenly, center, space-evenly);
+            font-size: $fuente-medium;
+        }
+        &__contenido--logo {
+            & a {
+                font-size: $fuente-medium;
+            }
+        }
+        &__contenido--redes {
+            & p {
+                font-size: $fuente-medium;
+            }
+        }
+        &__contenido--iconos {
+            & img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+
+}
+
+/*-------------- PANTALLA 1200 --------------*/
+
+@media (min-width:1201px) {
+
+    .header__logo {
+        height: 15em;
+        width: 15em;
+    }
+
+    .contenido {
+        &__parrafo--titulo {
+            font-size: $fuente-xl;
+            margin-top: 23%;
+        }
+        &__parrafo--texto {
+            font-size: $fuente-large;
+        }
+    }
+
+    .comunicate {
+        &__texto {
+            & h1 {
+                font-size: $fuente-xl;
+            }
+            & p {
+                font-size: $fuente-large;
+            }  
+        }
+        &__formulario {
+            width: 20em;
+        }
+    }
+
+    .menu {
+        & img {
+            width: 20em;
+            height: 20em;
+        }
+        & h1 {
+            font-size: $fuente-xl;
+            margin-top: 5%;
+        }
+        &__grid {
+            @include grid (normal, center, start, space-evenly);
+            grid-template-areas:
+           "agares belcebu"
+           "paimon astaroth"
+           "amon samael"
+           "lilith lucifer"
+            ;
+            grid-template-columns: 30em 30em;
+            grid-column-gap: 4em;
+            grid-template-rows: 38em 38em 38em 38em;
+            height: 205em;
+            & div {
+            height: 35em;
+            }
+            & div#astaroth {
+                height: 36.8rem;
+            }
+            & h2 {
+                font-size: $fuente-large;
+            }
+            & p {
+                font-size: $fuente-medium;
+            }
+        }
+    }
+
+    .sumate {
+        &__texto {
+            & h1 {
+                font-size: $fuente-xl;
+            }
+            & p {
+                font-size: $fuente-large;
+            }
+        }
+        &__formulario {
+            width: 20em;
+        }
+    }
+
+    .ubicacion {
+        &__direccion {
+            & h2 {
+                font-size: $fuente-xl;
+            }
+            & p {
+                font-size: $fuente-large;
+            }
+            & iframe {
+                width: 30em;
+            }
+        }
+    }
+
+    .footer {
+        &__contenido {
+            @include grid (center, space-evenly, center, space-evenly);
+            font-size: $fuente-medium;
+        }
+        &__contenido--logo {
+            & a {
+                font-size: $fuente-medium;
+            }
+        }
+        &__contenido--redes {
+            & p {
+                font-size: $fuente-medium;
+            }
+        }
+        &__contenido--iconos {
+            & img {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+    
+}
