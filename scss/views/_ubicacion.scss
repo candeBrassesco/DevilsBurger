@@ -10,7 +10,7 @@
     &__direccion {
         @include flex (column, normal, center, normal);
         margin-top: 2rem;
-        & h2 {
+        & h1 {
             text-transform: uppercase;
             font-size: $fuente-large;
             text-align: center;
@@ -29,7 +29,7 @@
         flex-wrap: wrap;
         margin-top: 6rem;
         height: 18.75em;
-        & h3 {
+        & h2 {
             text-transform: uppercase;
             font-size: $fuente-medium;
             text-align: center;
