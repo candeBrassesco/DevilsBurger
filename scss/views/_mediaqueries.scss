@@ -66,11 +66,6 @@
                 font-size: $fuente-medium;
             }
         }
-        &__contenido--redes {
-            & p {
-                font-size: $fuente-medium;
-            }
-        }
         &__contenido--iconos {
             & img {
                 width: 3rem;
@@ -132,11 +127,6 @@
         }
         &__contenido--logo {
             & a {
-                font-size: $fuente-medium;
-            }
-        }
-        &__contenido--redes {
-            & p {
                 font-size: $fuente-medium;
             }
         }
@@ -258,11 +248,6 @@
                 font-size: $fuente-medium;
             }
         }
-        &__contenido--redes {
-            & p {
-                font-size: $fuente-medium;
-            }
-        }
         &__contenido--iconos {
             & img {
                 width: 3rem;
@@ -379,11 +364,6 @@
                 font-size: $fuente-medium;
             }
         }
-        &__contenido--redes {
-            & p {
-                font-size: $fuente-medium;
-            }
-        }
         &__contenido--iconos {
             & img {
                 width: 3rem;
@@ -423,7 +403,7 @@
             }  
         }
         &__formulario {
-            width: 20em;
+            width: 24em;
         }
     }
 
@@ -445,7 +425,7 @@
            "lilith lucifer"
             ;
             grid-template-columns: 30em 30em;
-            grid-column-gap: 4em;
+            grid-column-gap: 6em;
             grid-template-rows: 38em 38em 38em 38em;
             height: 205em;
             & div {
@@ -473,7 +453,7 @@
             }
         }
         &__formulario {
-            width: 20em;
+            width: 24em;
         }
     }
 
@@ -498,11 +478,6 @@
         }
         &__contenido--logo {
             & a {
-                font-size: $fuente-medium;
-            }
-        }
-        &__contenido--redes {
-            & p {
                 font-size: $fuente-medium;
             }
         }

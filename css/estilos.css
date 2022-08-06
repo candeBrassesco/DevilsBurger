@@ -307,8 +307,6 @@ body {
     font-size: 1.2em; }
   .footer__contenido--logo a {
     font-size: 1.2em; }
-  .footer__contenido--redes p {
-    font-size: 1.2em; }
   .footer__contenido--iconos img {
     width: 3rem;
     height: 3rem; } }
@@ -345,8 +343,6 @@ body {
     align-content: space-evenly;
     font-size: 1.2em; }
   .footer__contenido--logo a {
-    font-size: 1.2em; }
-  .footer__contenido--redes p {
     font-size: 1.2em; }
   .footer__contenido--iconos img {
     width: 3rem;
@@ -414,8 +410,6 @@ body {
     font-size: 1.2em; }
   .footer__contenido--logo a {
     font-size: 1.2em; }
-  .footer__contenido--redes p {
-    font-size: 1.2em; }
   .footer__contenido--iconos img {
     width: 3rem;
     height: 3rem; } }
@@ -482,8 +476,6 @@ body {
     font-size: 1.2em; }
   .footer__contenido--logo a {
     font-size: 1.2em; }
-  .footer__contenido--redes p {
-    font-size: 1.2em; }
   .footer__contenido--iconos img {
     width: 3rem;
     height: 3rem; } }
@@ -503,7 +495,7 @@ body {
   .comunicate__texto p {
     font-size: 1.5em; }
   .comunicate__formulario {
-    width: 20em; }
+    width: 24em; }
   .menu img {
     width: 20em;
     height: 20em; }
@@ -518,7 +510,7 @@ body {
     align-content: space-evenly;
     grid-template-areas: "agares belcebu" "paimon astaroth" "amon samael" "lilith lucifer";
     grid-template-columns: 30em 30em;
-    grid-column-gap: 4em;
+    grid-column-gap: 6em;
     grid-template-rows: 38em 38em 38em 38em;
     height: 205em; }
     .menu__grid div {
@@ -534,7 +526,7 @@ body {
   .sumate__texto p {
     font-size: 1.5em; }
   .sumate__formulario {
-    width: 20em; }
+    width: 24em; }
   .ubicacion__direccion h1 {
     font-size: 2em; }
   .ubicacion__direccion p {
@@ -549,8 +541,6 @@ body {
     align-content: space-evenly;
     font-size: 1.2em; }
   .footer__contenido--logo a {
-    font-size: 1.2em; }
-  .footer__contenido--redes p {
     font-size: 1.2em; }
   .footer__contenido--iconos img {
     width: 3rem;
