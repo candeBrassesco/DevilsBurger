@@ -209,7 +209,8 @@ body {
       padding: 2rem;
       text-transform: uppercase; }
     .sumate__texto p {
-      font-size: 1em; }
+      font-size: 1em;
+      padding: 2rem; }
   .sumate__formulario {
     font-size: 1.2em;
     width: 15em; }
