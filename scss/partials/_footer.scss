@@ -13,6 +13,7 @@
         height:25rem;
         & a {
             text-decoration: none;
+            text-transform: uppercase;
             margin-right: 1rem;
             padding: 1.2rem;
             color: $color-letra;
@@ -26,11 +27,6 @@
             width: 6.55em;
             height: 3em;
         }  
-    }
-    &__contenido--redes {
-        & p {
-            font-size: $fuente-small;
-        }
     }
     &__contenido--iconos {
         & img {

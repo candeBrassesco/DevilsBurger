@@ -60,6 +60,7 @@ body {
     height: 25rem; }
     .footer__contenido a {
       text-decoration: none;
+      text-transform: uppercase;
       margin-right: 1rem;
       padding: 1.2rem;
       color: beige; }
@@ -68,8 +69,6 @@ body {
   .footer__contenido--logo img {
     width: 6.55em;
     height: 3em; }
-  .footer__contenido--redes p {
-    font-size: 1em; }
   .footer__contenido--iconos img {
     width: 2.5rem;
     height: 2.5rem; }
@@ -81,7 +80,7 @@ body {
 .contenido {
   background-color: #191818;
   color: beige;
-  padding: 1rem;
+  padding: 0.8rem;
   line-height: 1.6; }
   .contenido__parrafo--titulo {
     font-weight: 700;
