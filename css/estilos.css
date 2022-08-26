@@ -133,9 +133,20 @@ body {
     text-align: center;
     padding: 3.5rem;
     font-size: 1.5em; }
+    .menu h1 p {
+      font-size: 1em;
+      text-align: center;
+      padding: 1rem; }
   .menu img {
     width: 11em;
     height: 11em; }
+  .menu__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap; }
   .menu__grid {
     display: grid;
     justify-items: normal;
@@ -285,6 +296,8 @@ body {
   .menu img {
     width: 15em;
     height: 15em; }
+  .menu p {
+    font-size: 1.2em; }
   .menu__grid {
     grid-template-columns: 30em;
     grid-template-rows: 35em 35em 35em 35em 35em 35em 35em 35em; }
@@ -322,6 +335,8 @@ body {
   .menu img {
     width: 15em;
     height: 15em; }
+  .menu p {
+    font-size: 1.2em; }
   .menu__grid {
     grid-template-columns: 30em;
     grid-template-rows: 35em 35em 35em 35em 35em 35em 35em 35em; }
@@ -370,6 +385,8 @@ body {
   .menu h1 {
     font-size: 2em;
     margin-top: 5%; }
+  .menu p {
+    font-size: 1.5em; }
   .menu__grid {
     display: grid;
     justify-items: normal;
@@ -436,6 +453,8 @@ body {
   .menu h1 {
     font-size: 2em;
     margin-top: 5%; }
+  .menu p {
+    font-size: 1.5em; }
   .menu__grid {
     display: grid;
     justify-items: normal;
@@ -502,6 +521,8 @@ body {
   .menu h1 {
     font-size: 2em;
     margin-top: 5%; }
+  .menu p {
+    font-size: 1.5em; }
   .menu__grid {
     display: grid;
     justify-items: normal;

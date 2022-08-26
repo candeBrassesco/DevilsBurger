@@ -29,8 +29,11 @@
 
     .menu {
         & img {
-        width: 15em;
-        height: 15em;
+            width: 15em;
+            height: 15em;
+        }
+        & p {
+            font-size: $fuente-medium;
         }
         &__grid {
             grid-template-columns: 30em;
@@ -93,8 +96,11 @@
 
     .menu {
         & img {
-        width: 15em;
-        height: 15em;
+            width: 15em;
+            height: 15em;
+        }
+        & p {
+            font-size: $fuente-medium;
         }
         &__grid {
             grid-template-columns: 30em;
@@ -182,6 +188,9 @@
         & h1 {
             font-size: $fuente-xl;
             margin-top: 5%;
+        }
+        & p {
+            font-size: $fuente-large;
         }
         &__grid {
             @include grid (normal, center, start, space-evenly);
@@ -299,6 +308,9 @@
             font-size: $fuente-xl;
             margin-top: 5%;
         }
+        & p {
+            font-size: $fuente-large;
+        }
         &__grid {
             @include grid (normal, center, start, space-evenly);
             grid-template-areas:
@@ -415,6 +427,9 @@
         & h1 {
             font-size: $fuente-xl;
             margin-top: 5%;
+        }
+        & p {
+            font-size: $fuente-large;
         }
         &__grid {
             @include grid (normal, center, start, space-evenly);

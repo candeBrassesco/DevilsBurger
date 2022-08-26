@@ -7,10 +7,19 @@
         text-align: center;
         padding: 3.5rem;
         font-size: $fuente-large;
+    & p {
+        font-size: $fuente-small;
+        text-align: center;
+        padding: 1rem;
+    }
     }
     & img {
         width: 11em;
         height: 11em;
+    }
+    &__flex {
+        @include flex (column, none, center, center);
+        flex-wrap: wrap;
     }
     &__grid {
         @include grid (normal, center, normal, space-evenly);
