@@ -8,6 +8,12 @@
         height: 8em;
     }
 
+    .comunicate {
+        & p {
+            padding: 1rem;
+        }
+    }
+
     .ubicacion__direccion iframe {
         width: 19em;
     }
@@ -115,11 +121,11 @@
     }
 
     .comunicate__formulario {
-        width: 20em;
+        width: 24em;
     }
 
     .sumate__formulario {
-        width: 20em;
+        width: 24em;
     }
 
     .ubicacion__direccion iframe {
@@ -176,7 +182,7 @@
             }  
         }
         &__formulario {
-            width: 20em;
+            width: 27em;
         }
     }
 
@@ -229,7 +235,7 @@
             }
         }
         &__formulario {
-            width: 20em;
+            width: 27em;
         }
     }
 
@@ -295,7 +301,7 @@
             }  
         }
         &__formulario {
-            width: 20em;
+            width: 29em;
         }
     }
 
@@ -348,7 +354,7 @@
             }
         }
         &__formulario {
-            width: 20em;
+            width: 29em;
         }
     }
 
@@ -415,7 +421,7 @@
             }  
         }
         &__formulario {
-            width: 24em;
+            width: 33em;
         }
     }
 
@@ -468,7 +474,7 @@
             }
         }
         &__formulario {
-            width: 24em;
+            width: 33em;
         }
     }
 
