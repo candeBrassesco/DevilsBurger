@@ -2,6 +2,8 @@
 
 <p>Este es un repositorio para un restaurant de hamburguesas.</p>
 
+<p>link al repositorio https://devilsburger.netlify.app/</p>
+
 <h2>Inicio</h2>
 
 <p>Primera visualización del sitio al ingresar.</p>
